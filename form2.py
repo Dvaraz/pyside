@@ -173,10 +173,11 @@ class MainTestWindow(QMainWindow):
         self.ui.pushButton_5.clicked.connect(self.right_bot)
 
         self.ui.pushButton_6.clicked.connect(self.get_information)
+        self.ui.dial.valueChanged.connect(self.dial)
 
 
     def dial(self):
-        print("dial")
+        self.ui.lcdNumber.value()
 
 
     def left_top(self):
